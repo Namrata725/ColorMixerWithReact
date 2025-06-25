@@ -88,3 +88,5 @@ color-mixer-react/
 Thanks to open-source tools like React and Vite that made this mini project possible!
 
 ---
+
+## for preview :: https://namrata725.github.io/ColorMixerWithReact/
