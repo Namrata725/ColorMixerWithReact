@@ -1,12 +1,90 @@
-# React + Vite
+# Color Mixer Mini Project With React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A beginner-friendly mini project built with **React** and **Vite**. This app allows users to mix colors by adjusting RGB values using sliders. It offers a live preview of the color and stores the selected combination using the browser's `localStorage` API so users can revisit their chosen shade later.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Project Highlights
 
-## Expanding the ESLint configuration
+- Built with modern React best practices (Hooks & functional components)
+- Interactive UI to mix Red, Green, and Blue channels
+- Save color state locally with `localStorage`
+- Live color preview area
+- Custom CSS styling with a clean and responsive design
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Tech Stack
+
+| Technology   | Description                          |
+| ------------ | ------------------------------------ |
+| React        | Frontend library for UI              |
+| Vite         | Fast development & bundling tool     |
+| JavaScript   | Application logic & state management |
+| CSS          | Styling the app                      |
+| localStorage | Save user data in the browser        |
+
+---
+
+## How It Works
+
+- The user adjusts the sliders labeled **Red**, **Green**, and **Blue**
+- The background of the preview box updates instantly using `rgb(r, g, b)`
+- When the user clicks **Save Color Combination**, the values are stored in localStorage
+- On reload, the saved color reappears and the sliders are pre-filled with saved values
+
+---
+
+## Getting Started
+
+Follow these steps to run the project locally:
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/your-username/color-mixer-react.git
+
+# 2. Navigate to the project directory
+cd color-mixer-react
+
+# 3. Install dependencies
+npm install
+
+# 4. Start the development server
+npm run dev
+```
+
+> Navigate to `http://localhost:5173` to view the app.
+
+---
+
+## Folder Structure
+
+```
+color-mixer-react/
+├── public/
+├── src/
+│   ├── App.jsx         # Main React component
+│   ├── index.css       # Global styles
+│   └── main.jsx        # React app entry point
+├── index.html
+├── package.json
+└── vite.config.js
+```
+
+---
+
+## What I Learned
+
+- Implementing interactive UI elements in React.
+- Working with component-level state using `useState`.
+- Saving and retrieving data with `localStorage`.
+- Writing reusable and clean CSS.
+- Structuring a small React project effectively.
+
+---
+
+## Acknowledgements
+
+Thanks to open-source tools like React and Vite that made this mini project possible!
+
+---
